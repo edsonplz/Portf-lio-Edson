@@ -44,6 +44,7 @@ img {
     height: 1px;
     background-color: #e500ce;
 }
+
 /*Fim do Estilo Geral*/
 .info-header {
     display: flex;
@@ -103,6 +104,7 @@ img {
     -webkit-text-fill-color: transparent;
     color: #d9d9d9;
 }
+
 .profile-photo {
     width: 350px;
     height: 350px;
@@ -110,13 +112,12 @@ img {
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    background: linear-gradient(
-        180deg, 
-        rgba(231, 15, 170, 1) 20%,
-        rgba(19, 176, 245, 1) 100%, 
-        rgba(132, 90, 205, 1) 100%
-    );
+    background: linear-gradient(180deg,
+            rgba(231, 15, 170, 1) 20%,
+            rgba(19, 176, 245, 1) 100%,
+            rgba(132, 90, 205, 1) 100%);
 }
+
 .profile-photo img {
     width: 335px;
 }
@@ -126,21 +127,81 @@ img {
     font-size: 18px;
     color: #a7a7a7;
 }
+
 /*Tecnologias*/
-#tecnologies{
-    margin:100px 0;
+#tecnologies {
+    margin: 100px 0;
 }
-.container-icons{
+
+.container-icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 30px;
 }
+
 .container-icons img {
     filter: grayscale(0);
     transition: filter 0.5s;
 }
+
 .container-icons img:hover {
     cursor: pointer;
     filter: grayscale(100%);
+}
+
+/*Projetos*/
+.info-projects {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card-project {
+    min-height: 600px;
+    height: fit-content;
+    background-color: #363636;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.info-card-project {
+    padding: 28px;
+}
+
+.info-card-project h3 {
+    color: #ccc;
+    font-size: 27px;
+    font-weight: normal;
+}
+
+.info-card-project p {
+    color: #ccc;
+    font-size: 17px;
+}
+
+.legend-project p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.legend-project span {
+    font-weight: bold;
+}
+
+.footer-project {
+    display: flex;
+    justify-content: space-between;
+}
+
+.url-project, .code-project {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.url-project a, .code-project a {
+    color: #ccc;
+    font-size: 15px;
 }
