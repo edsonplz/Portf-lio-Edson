@@ -1,0 +1,128 @@
+/*Estilo Geral*/
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #191919;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 10px 100px;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.subtitle {
+    font-size: 28px;
+    font-weight: normal;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.subtitle::after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: #e500ce;
+}
+/*Fim do Estilo Geral*/
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.info-menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0 10px;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #a7a7a7;
+    transition: color 1s;
+    font-size: 20px;
+}
+
+.menu ul li a:hover {
+    color: #e500ce;
+}
+
+/*Apresentação*/
+#apresentation {
+    margin: 100px 0;
+}
+
+.info-apresentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-apresentation h1 {
+    font-size: 58px;
+    color: #d9d9d9;
+    line-height: 76px;
+}
+
+.info-apresentation span {
+    background: rgb(19, 176, 245);
+    background: linear-gradient(90deg, rgba(19, 176, 245, 1) 0%, rgba(132, 90, 205, 1) 50%, rgba(231, 15, 170, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #d9d9d9;
+}
+.profile-photo {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: linear-gradient(
+        180deg, 
+        rgba(231, 15, 170, 1) 20%,
+        rgba(19, 176, 245, 1) 100%, 
+        rgba(132, 90, 205, 1) 100%
+    );
+}
+.profile-photo img {
+    width: 335px;
+}
+
+/*Sobre mim*/
+.info-aboutme p {
+    font-size: 18px;
+    color: #a7a7a7;
+}
