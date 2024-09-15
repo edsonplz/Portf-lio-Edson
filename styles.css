@@ -126,3 +126,21 @@ img {
     font-size: 18px;
     color: #a7a7a7;
 }
+/*Tecnologias*/
+#tecnologies{
+    margin:100px 0;
+}
+.container-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+.container-icons img {
+    filter: grayscale(0);
+    transition: filter 0.5s;
+}
+.container-icons img:hover {
+    cursor: pointer;
+    filter: grayscale(100%);
+}
