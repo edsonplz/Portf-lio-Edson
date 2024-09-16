@@ -45,6 +45,11 @@ img {
     background-color: #e500ce;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 /*Fim do Estilo Geral*/
 .info-header {
     display: flex;
@@ -204,4 +209,132 @@ img {
 .url-project a, .code-project a {
     color: #ccc;
     font-size: 15px;
+}
+
+/*Depoimentos*/
+#testimonial {
+    margin: 100px 0;
+}
+
+.info-testimonial {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-testimonials {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.controls-testimonials {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.prev-testimonial {
+    border-radius: 15px;
+    background-color: #f10677;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.next-testimonial {
+    border-radius: 15px;
+    border: 1px solid #f10677;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.disable {
+    opacity: 0.8;
+    pointer-events: none;
+    background-color: #f2f2f2;
+    box-shadow: none;
+    cursor:not-allowed;
+}
+
+.outline-card-testimonial {
+    border-radius: 16px;
+    border: 1px solid #f10677;
+    padding: 25px 28px;
+    height: 370px;
+}
+
+.outline-card-testimonial > p {
+    color: #ffffff50;
+    margin-top: 10px;
+}
+
+.outline-card-testimonial::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./assets/quotes.svg);
+    background-size: cover;
+}
+
+.footer-card-testimonial {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.info-personal-testimonial {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-testimonial {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.ocuppation-testimonial {
+    font-size: 18px;
+    font-weight: bold;
+    color: #7B4AE280;
+}
+
+.fill-in-card-testimonial {
+    border-radius: 16px;
+    background-color:#f10677;
+    padding: 25px 28px;
+    height: 370px;
+}
+
+.fill-in-card-testimonial p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.fill-in-card-testimonial::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(./assets/quotes-white.svg);
+    background-size: cover;
+}
+
+.fill-in-card-testimonial .ocuppation-testimonial {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
 }
