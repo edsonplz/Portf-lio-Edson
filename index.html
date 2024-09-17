@@ -310,7 +310,15 @@
                     <input type="text" id="nome" placeholder="Nome"/>
                     <input type="email" id="email" placeholder="Email"/>
                     <input type="text" id="assunto" placeholder="Assunto"/>
-                    <input type="text" id="mensagem" placeholder="Mensagem"/>
+                    <textarea id="mensagem" placeholder="Mensagem"></textarea>
+
+                    <div class="submit-form">
+                        <input type="submit" value="Enviar"/>
+                        <img src="./assets/send-icon.svg" alt="Formulário de contato portfolio Edson"/>
+                    </div>
+                    <p id="loading" class="response-forms" style="display:none;">Carregando...</p>
+                    <p id="success-message" class="response-forms" style="display:none;">Mensagem enviada com sucesso!</p>
+                    <p id="error-message" class="response-forms" style="display:none;">Erro ao enviar mensagem, mande um email para: crafte170@gmail.com</p>
                 </form>
             </div>
         </div>

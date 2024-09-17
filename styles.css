@@ -207,13 +207,15 @@ p {
     justify-content: space-between;
 }
 
-.url-project, .code-project {
+.url-project,
+.code-project {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.url-project a, .code-project a {
+.url-project a,
+.code-project a {
     color: #ccc;
     font-size: 15px;
 }
@@ -270,7 +272,7 @@ p {
     pointer-events: none;
     background-color: #f2f2f2;
     box-shadow: none;
-    cursor:not-allowed;
+    cursor: not-allowed;
 }
 
 .outline-card-testimonial {
@@ -280,7 +282,7 @@ p {
     height: 370px;
 }
 
-.outline-card-testimonial > p {
+.outline-card-testimonial>p {
     color: #ffffff50;
     margin-top: 10px;
 }
@@ -321,7 +323,7 @@ p {
 
 .fill-in-card-testimonial {
     border-radius: 16px;
-    background-color:#f10677;
+    background-color: #f10677;
     padding: 25px 28px;
     height: 370px;
 }
@@ -343,6 +345,72 @@ p {
 .fill-in-card-testimonial .ocuppation-testimonial {
     font-size: 18px;
     font-weight: bold;
+    color: #fff;
+}
+
+/*Estilo de Contatos*/
+#contact {
+    margin: 50px 0;
+}
+
+.info-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea {
+    border: none;
+    border-bottom: 2px solid #fa08c5;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    caret-color: #fff;
+    font-size: 22px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.submit-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+input[type="submit"] {
+    font-size: 25px;
+    color: #fff;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.response-forms {
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+}
+
+::placeholder {
+    font-size: 24px;
     color: #fff;
 }
 
