@@ -109,3 +109,44 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     });
 });
+
+/* Scroll */
+
+function scrollToSection(sectionId) {
+    const section = document.querySelector(sectionId);
+
+    if(section) {
+        let scrolloffset = 0;
+
+        if(sectionId === "#projects"){
+            scrolloffset = section.offsetTop - 70;
+        } else {
+            scrolloffset = section.offsetTop - (window.innerHeight - section.clientHeight) / 2;
+        }
+
+        window.scrollTo({
+            top: scrolloffset,
+            behavior: 'smooth'
+        })
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll("nav a");
+    links.forEach(function(link) {
+        link.addEventListener("click", function(e){
+            e.preventDefault();
+            const sectionId = link.getAttribute("href");
+            scrollToSection(sectionId);
+        })
+    });
+
+    const footerLinks = document.querySelectorAll("footer a");
+    footerLinks.forEach(function(link) {
+        link.addEventListener("click", function(e){
+            e.preventDefault();
+            const sectionId = link.getAttribute("href");
+            scrollToSection(sectionId);
+        })
+    });
+})
