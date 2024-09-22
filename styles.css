@@ -501,5 +501,58 @@ footer{
     #apresentation {
         margin: 20px 0;
     }
-    
+
+    .info-apresentation {
+        flex-direction: column;
+    }
+
+    .info-apresentation h1 {
+        font-size: 38px;
+        line-height: 42px;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    /*Tecnologias*/
+
+    .container-icons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /*Projetos*/
+
+    .info-projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .card-project {
+        max-width: 90%;
+    }
+
+    /* Rodapé */
+
+    .footer-project {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .first-infos-footer {
+        flex-direction: column;
+    }
+
+    .container-right-footer {
+        flex-direction: column;
+    }
+
+    .second-infos-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
 }
