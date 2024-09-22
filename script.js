@@ -57,3 +57,26 @@ prevButton.addEventListener("click", prevCard);
 nextButton.addEventListener("click", nextCard);
 showCards();
 window.addEventListener("resize", showCards);
+
+/* Contato do Site*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    const sucessMessage = document.getElementById("sucess-message");
+    const errorMessage = document.getElementById("error-message");
+    const loading = document.getElementById("loading");
+
+    form.addEventListener("submit", function(e){
+        e.preventDefault();
+
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+        const assunto = document.getElementById("assunto").value;
+        const mensagem = document.getElementById("mensagem").value;
+
+        form.style.display = "none";
+        sucessMessage.style.display = "none";
+        errorMessage.style.display = "none";
+        loading.style.display = "block";
+    })
+})
