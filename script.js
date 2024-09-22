@@ -74,9 +74,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const assunto = document.getElementById("assunto").value;
         const mensagem = document.getElementById("mensagem").value;
 
-        // form.style.display = "none";
-        // sucessMessage.style.display = "none";
-        // errorMessage.style.display = "none";
+        form.style.display = "none";
+        sucessMessage.style.display = "none";
+        errorMessage.style.display = "none";
         loading.style.display = "block";
 
         const data = {
