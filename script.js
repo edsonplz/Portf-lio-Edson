@@ -74,9 +74,38 @@ document.addEventListener("DOMContentLoaded", function() {
         const assunto = document.getElementById("assunto").value;
         const mensagem = document.getElementById("mensagem").value;
 
-        form.style.display = "none";
-        sucessMessage.style.display = "none";
-        errorMessage.style.display = "none";
+        // form.style.display = "none";
+        // sucessMessage.style.display = "none";
+        // errorMessage.style.display = "none";
         loading.style.display = "block";
-    })
-})
+
+        const data = {
+            to: "crafte170@gmail.com",
+            from: "edsonpll@hotmail.com",
+            subject: "Contato do Site",
+            text: "Contato do Site",
+            html: `<p>Nome: ${nome}</p><br/><p>Email: ${email}</p><br/><p>Assunto: ${assunto}</p><br/><p>Mensagem: ${mensagem}</p>`,
+        };
+
+        fetch("https://nodemailer-edson.onrender.com/send-email", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        }).then(res => {
+            if(res.ok){
+                loading.style.display = "none";
+                sucessMessage.style.display = "block";
+            } else {
+                loading.style.display = "none";
+                errorMessage.style.display = "block";
+                console.error(`Erro na resposta da api: ${res.status} - ${res.statusText}`)
+            }
+        }).catch((error) => {
+            console.error(error);
+            loading.style.display = "none";
+            errorMessage.style.display = "block";
+        })
+    });
+});
